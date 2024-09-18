@@ -1,0 +1,34 @@
+.switcher {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  margin: 20px auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.switcher li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.switcher li.active {
+  background: linear-gradient(to right, red, green, blue);
+  color: white;
+}
+
+
+.gallery {
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

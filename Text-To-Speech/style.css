@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    width: 500px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    width: calc(100% + 40px);
+    margin: -20px 0 20px -20px;
+    padding: 5px;
+    background: #ffc600;
+    border-bottom: 5px solid #F3C010;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.container input,
+.container button,
+.container select,
+.container textarea {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    font-size: 20px;
+    background: #F7F7F7;
+    outline: 0;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    background-color: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border: 2px solid #ccc;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #ffc600;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: -4px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.container button {
+    background: #ffc600;
+    border: 0;
+    width: 49%;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0;
+    font-size: 20px;
+    border-bottom: 5px solid #F3C010;
+    cursor: pointer;
+    position: relative;
+}
+
+.container button:active {
+    top: 2px;
+}
+
+.container button:nth-of-type(1) {
+    margin-right: 2%;
+}

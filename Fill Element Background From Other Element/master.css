@@ -1,0 +1,41 @@
+.product {
+  width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.number {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  background: #009588;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+h2 {
+  margin: 20px 0;
+  transition: 0.5s;
+}
+p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  transition: 0.5s;
+}
+.product:hover .number {
+    box-shadow: 0 0 0 1000px #009588;
+}
+.product:hover p,
+.product:hover h2 {
+    color: white;
+}

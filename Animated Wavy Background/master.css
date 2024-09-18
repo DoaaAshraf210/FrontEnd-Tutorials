@@ -1,0 +1,51 @@
+.page {
+  height: 100vh;
+  margin: 0;
+}
+.page::before {
+  content: "";
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  background: pink;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  animation: moving 2s ease-in-out infinite alternate;
+  z-index: -1;
+}
+@keyframes moving {
+  from {
+    transform: translateX(-50%) skew(0, -10deg);
+  }
+  to {
+    transform: translateX(-50%) skew(10deg, 0);
+  }
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    /* height: 400px; */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px #ddd;
+}
+
+.card .image {
+  background: pink;
+  color: white;
+  height: 200px;
+  width: 100%;
+  line-height: 200px;
+  font-size: 50px;
+  border-radius: inherit;
+  
+}

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+h1 {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  color: teal;
+  width: 100%;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  color: white;
+  background-color: teal;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+q {
+  display: block;
+  padding-bottom: 20px;
+  color: #333;
+  position: relative;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+q::before {
+  content: "\f10d";
+  margin-right: 10px;
+}
+
+q::after {
+  margin-left: 10px;
+  content: "\f10e";
+}
+
+q::before,
+q::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.controls {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:focus {
+  overflow: none;
+}
+
+.generator {
+  background-color: #279b37;
+}
+
+.auto {
+  background-color: #037ef3;
+}
+
+.stop {
+  background-color: red;
+}
+
+.auto-on {
+  margin: auto;
+  text-align: center;
+  color: #333;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="master.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name">Hangman</div>
+        <div class="category">Work Form : <span> </span></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="letters">
+          <div class="letters-guess"></div>
+        </div>
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="stand"></div>
+            <div class="hang"></div>
+            <div class="rope"></div>
+            <div class="man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands">
+                <div class="hand hand-right"></div>
+                <div class="hand hand-left"></div>
+              </div>
+              <div class="legs">
+                <div class="leg leg-right"></div>
+                <div class="leg leg-left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <audio src="success.mp3" id="success" preload="auto"></audio>
+    <audio
+      src="congaratoration.mp3"
+      id="congaratoration"
+      preload="auto"
+    ></audio>
+
+
+    
+    <audio src="game-over.mp3" id="game-over" preload="auto"></audio>
+    <audio src="wrong-answer.mp3" id="wrong-answer" preload="auto"></audio>
+
+    <script src="Js.js"></script>
+  </body>
+</html>

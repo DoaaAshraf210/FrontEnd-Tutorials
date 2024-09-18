@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.button-controls {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.button-controls span {
+  background-color: red;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info-container {
+  background-color: #f5f5f5;
+  width: 1080px;
+  margin: 20px auto 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #2196f3;
+}
+
+.info-container .name,
+.info-container .tries {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.game-blocks {
+  width: 1100px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  height: 200px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  margin: 0 10px 10px;
+  position: relative;
+  flex: 1 0 200px;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+
+.game-blocks.no-clicking {
+  pointer-events: none;
+
+}
+
+.block.flipped,
+.block.match {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.block .face {
+  border: 5px solid #2196f3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.block .front {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block .front::before {
+  content: "!";
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.block .back {
+  transform: rotateY(180deg);
+}
+
+.block .back img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.699);
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 130px;
+  border-radius: 10px;
+  margin: auto;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.popup span {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 30px;
+}

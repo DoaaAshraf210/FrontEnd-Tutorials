@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      color: white;
+      font-size: 18px;
+      background-color: blueviolet;
+    }
+    form {
+      width: 200px;
+      margin: 100px auto;
+    }
+    input,
+    select {
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+      width: 100%;
+      padding: 5px 10px;
+      background-color: transparent;
+    }
+    select {
+      background-color: blueviolet;
+      color: white;
+    }
+    input:focus,
+    select {
+      outline: none;
+    }
+    input::placeholder {
+      color: white;
+    }
+    
+  </style>
+
+  <body>
+    <form>
+      <input type="text" placeholder="userName" /><br /><br />
+      <input type="email" placeholder="mail" /><br /><br />
+      <input type="password" placeholder="password" /><br /><br />
+      <select name="colors" id="colors">
+        <option value="blueviolet" selected>blueviolet</option>
+        <option value="blue">blue</option>
+        <option value="cadetblue">cadetblue</option>
+        <option value="darkblue">darkblue</option>
+        <option value="darkmagenta">darkmagenta</option>
+        <option value="darkred">darkred</option>
+      </select>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

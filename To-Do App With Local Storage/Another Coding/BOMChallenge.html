@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BOM Challenge</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .container {
+        width: 400px;
+        margin: 50px auto;
+      }
+      .container form {
+        background: #eee;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .container form input[type="text"] {
+        width: 70%;
+        padding: 10px;
+        background-color: white;
+        flex: 1;
+        caret-color: red;
+      }
+      .container form input[type="text"]:focus {
+        outline: none;
+      }
+      .container form input[type="submit"] {
+        width: 20%;
+        padding: 10px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .container .new-task {
+        width: 100%;
+        background-color: #eee;
+        padding: 20px;
+      }
+      .container .new-task div {
+        padding: 10px;
+        background-color: white;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .container .new-task button {
+        border-radius: 10px;
+        padding: 5px 8px;
+        cursor: pointer;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" />
+        <input type="submit" value="Add Task" />
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

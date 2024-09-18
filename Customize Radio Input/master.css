@@ -1,0 +1,43 @@
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+form > div {
+  padding: 5px 0;
+}
+form input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  
+}
+form label {
+  position: relative;
+  padding-left: 25px;
+}
+form label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0075ff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  transition: 0.5s;
+}
+form input[type="radio"]:checked + label::after,
+form input[type="radio"]:not(:checked):hover + label::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #0075ff;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  
+}
+form input[type="radio"]:not(:checked):hover + label::after {
+  opacity: 0.4;
+}

@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div::after {
+  content: "";
+  background-color: white;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: move 4s linear infinite;
+  mix-blend-mode: difference;
+}
+
+@keyframes move {
+
+  0%,
+  100% {
+    left: 0%;
+  }
+
+  50% {
+    left: calc(100% - 80px)
+  }
+}
+
+span {
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}

@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quiz-app {
+  width: 600px;
+  margin: 50px auto;
+  background-color: #ccc;
+  padding: 15px;
+}
+
+.quiz-app .quiz-info {
+  background-color: #fff;
+  display: flex;
+  padding: 15px;
+}
+
+.quiz-app .quiz-info .category {
+  flex: 1;
+}
+
+.quiz-app .quiz-info.count {
+  flex: 1;
+  text-align: right;
+}
+
+.quiz-app .quiz-area {
+  padding: 15px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.quiz-app .quiz-area h2 {
+  margin: 0;
+}
+
+.answers-area {
+  background-color: #fff;
+  padding: 0 20px 20px 20px;
+}
+
+.answers-area .answer {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.answers-area .answer:not(:last-child) {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.answers-area .answer label {
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.answers-area .answer input[type="radio"]:checked+label {
+  color: #0075ff;
+}
+
+/* .answers-area .answer input[type="radio"]:checked + label::before {
+    
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: -23px;
+    top: 2px;
+    border: 2px solid #0075ff;
+    border-radius: 50%;
+  } */
+.answers-area .answer input[type="radio"]:checked+label:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: -23px;
+  top: 1px;
+  background-color: #0075ff;
+  border-radius: 50%;
+}
+
+.submit-button {
+  background-color: #0075ff;
+  color: white;
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bullets {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bullets .spans {
+  flex: 1;
+  display: flex;
+}
+
+.bullets .spans span {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.bullets .spans span.in-question {
+  background-color: #0075ff;
+}
+
+.bullets .countdown {
+  flex: 1;
+  text-align: right;
+}
+
+.result {
+  font-weight: bold;
+  padding: 20px;
+  background: white;
+  border-top: 10px solid #ccc;
+}
+
+.result span.perfect {
+  color: #0075ff;
+  font-size: 30px;
+}
+
+.result span.good {
+  color: #007588;
+  font-size: 30px;
+}
+
+.result span.bad {
+  color: #dc0a0a;
+  font-size: 30px;
+}

@@ -1,0 +1,30 @@
+html {
+    color: black;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 200vh;
+}
+
+div {
+    /* for testing
+    margin: 50px auto;
+    width: 450px;
+    height: 300px;
+    background-color: green; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+h1 {
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, .2);
+    font-size: 50px;
+    /* for testing
+    background-color: red;
+    */
+}

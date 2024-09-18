@@ -1,0 +1,21 @@
+body {
+  height: 1000vh;
+}
+span {
+  position: fixed;
+  right: -50px;
+  bottom: 30px;
+  background: #00796b;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial;
+  transition: 0.5s;
+  user-select: none;
+}
+span.show {
+    right: 30px;
+}

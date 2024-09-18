@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+
+}
+
+.container .post {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.container .post .head-post {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .post .head-post img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.container .post .head-post .info .date {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.container .post .post-content {
+    padding-bottom: 10px;
+}
+
+.container .post .reactions {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .post .reactions button {
+    border: none;
+    background: none;
+    color: #aaa;
+    width: 120px;
+    cursor: pointer;
+}
+
+.container .comments .comment {
+    position: relative;
+
+}
+
+.container .comments .comment {
+    margin-bottom: 120px;
+}
+
+.container .comments img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container .comment-body {
+    background-color: #eeeeee89;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.container .comment-body::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent #eeeeee89 transparent transparent;
+    position: absolute;
+    left: -25px;
+    top: 8px;
+}
+
+.container .comment-body .info {
+    margin-bottom: 10px;
+    gap: 6px;
+}
+
+
+.container .comment-body .info .date {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.container .comment-body .comment-content {
+    font-size: 14px;
+}

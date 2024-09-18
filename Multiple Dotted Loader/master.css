@@ -1,0 +1,46 @@
+.dotted-loader {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-width: 5px;
+  border-color: #0075ff;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  animation: move-right 2s linear infinite;
+}
+@keyframes move-right {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.dotted-loader::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-width: 5px;
+  border-color: #009588;
+  border-style: solid dotted;
+  border-radius: 50%;
+  animation: move-left 1s linear infinite;
+}
+@keyframes move-left {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}

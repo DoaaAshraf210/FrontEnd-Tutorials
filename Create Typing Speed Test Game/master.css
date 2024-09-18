@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.game {
+  background: #eee;
+  height: 100vh;
+}
+
+.name {
+  background: #00796b;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.message {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.message span {
+  color: #00796b;
+}
+
+.message select {
+  border: none;
+  font-size: 18px;
+  color: #00796b;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+}
+
+.message select:focus {
+  outline: none;
+}
+
+.message select option {
+  color: #00796b;
+  padding: 15px 10px;
+  font-size: 20px;
+  width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.message span::before,
+.message select::before {
+  content: " [ ";
+}
+
+.message span::after,
+.message select::after {
+  content: " ] ";
+}
+
+button {
+  cursor: pointer;
+  margin: 20px auto;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.word {
+  padding: 15px;
+  text-align: center;
+  font-size: 50px;
+  color: #00796b;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border: 3px solid #00796b;
+  caret-color: #00796b;
+  font-size: 20px;
+  color: #00796b;
+  font-weight: bold;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.upcoming-words {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.upcoming-words div {
+  background: #00796b;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.control span {
+  color: #00796b;
+  font-weight: bold;
+}
+
+.finish span {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+}
+
+.finish .good {
+  color: #00796b;
+}
+
+.finish .bad {
+  color: red;
+}

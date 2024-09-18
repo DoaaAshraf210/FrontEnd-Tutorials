@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //      challeng  DOM
+      document.body.style.cssText =
+        "font-family: arial;background-color: #eee;padding: 0;margin: 0;box-sizing: border-box;";
+
+      let header = document.createElement("header");
+      document.body.appendChild(header);
+      header.classList = "header";
+
+      header.style.cssText = `
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 10px;
+      `;
+
+      let logo = document.createElement("div");
+      logo.appendChild(document.createTextNode("Doaa"));
+      logo.classList = "logo";
+      header.prepend(logo);
+      logo.style.cssText = `
+          font-size: 35px;
+          font-weight: bold;
+          color: darkcyan;
+      `;
+      let ul = document.createElement("ul");
+      ul.classList = "websit-menu";
+
+      header.appendChild(ul);
+      let arr = ["Home", "About", "services", "Contact us"];
+      for (let i = 0; i < arr.length; i++) {
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(arr[i]));
+        ul.appendChild(li);
+        li.style.cssText = `
+                 margin: 10px;
+                 color:#aaa;
+        `;
+      }
+      ul.style.cssText = `
+              display: flex;
+          list-style: none;
+      `;
+
+      let content = document.createElement("section");
+      document.body.appendChild(content);
+      content.classList = "content";
+
+      content.style.cssText = `    display: flex;
+          flex-wrap: wrap;`;
+      for (let i = 1; i < 16; i++) {
+        let div = document.createElement("div");
+        div.innerHTML = `<div>${i}</div><div>Product</div>`;
+        content.appendChild(div);
+        div.style.cssText = `
+          background-color: white;
+          text-align: center;
+            width: calc(100% / 3 - 80px);
+          padding: 20px;
+          margin:20px
+
+          `;
+      }
+      let prduct = document.querySelectorAll("section div:last-child");
+      for (let i = 0; i < prduct.length; i++) {
+        prduct[i].style.color = "#aaa";
+        prduct[i].style.marginTop = "10px";
+      }
+
+      let footer = document.createElement("footer");
+      footer.appendChild(document.createTextNode("Copyright 2021"));
+      document.body.appendChild(footer);
+      footer.classList = "footer";
+
+      footer.style.cssText = `
+                background: darkcyan;
+          color: white;
+          padding: 20px 0;
+          text-align: center;
+          margin: auto;
+           font-size: 20px;
+      `;
+    </script>
+  </body>
+</html>

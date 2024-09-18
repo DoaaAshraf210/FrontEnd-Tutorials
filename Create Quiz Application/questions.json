@@ -1,0 +1,82 @@
+[
+    {
+        "title":"Why We Use <br> Element",
+        "answer-1":"To Make Text Bold",
+        "answer-2":"To Make Text Italic",
+        "answer-3":"To Add Breakline",
+        "answer-4":"To Create Horizontal Line",
+        "right-answer":"To Add Breakline"
+    },
+    {
+        "title":"Is <img> Element Has Attribute href",
+        "answer-1":"Yes",
+        "answer-2":"No Its For Anchor Tag <a>",
+        "answer-3":"All Element Has This Attribute",
+        "answer-4":"Answer 1 And 3 Is Right",
+        "right-answer":"No Its For Anchor Tag <a>"
+    },
+    {
+        "title":"How Can We Make Element Text Bold",
+        "answer-1":"Putting It Inside <b> Tag",
+        "answer-2":"Putting It Inside <strong> Tag",
+        "answer-3":"Customizing It With Front-Weight Property In CSS",
+        "answer-4":"All Answer Is Right",
+        "right-answer":"All Answer Is Right"
+    },
+    {
+        "title":"What Is The Right Hierarchy For Creating Part Of Page",
+        "answer-1":"<h2> Then <p> Then <h1> Then <p> Then <h3> Then <p> Then <img>",
+        "answer-2":"<h1> Then <p> Then <h3> Then <p> Then <h2> Then <p> Then <img>",
+        "answer-3":"<h2> Then <p> Then <h3> Then <p> Then <h1> Then <p> Then <img>",
+        "answer-4":"All Solutions  Is Wrong ",
+        "right-answer":"All Solutions Is Wrong"
+    },
+    {
+        "title":"How Can We Include External Page Inside Our Html Page",
+        "answer-1":"By Using Include In Html",
+        "answer-2":"By Using Load in Html",
+        "answer-3":"By Using iFrame in Tag",
+        "answer-4":"All Solutions Is Wrong ",
+        "right-answer":"By Using iFrame in Tag"
+    },
+    {
+        "title":"What Is The Tag That Not Exists In Html",
+        "answer-1":"<object>",
+        "answer-2":"<basefont>",
+        "answer-3":"<abbr>",
+        "answer-4":"All Tags Is Exists In Html",
+        "right-answer":"All Tags Is Exists In Html"
+    },
+    {
+        "title":"What Is Element Thats Not Exists in HTML5 Semantics",
+        "answer-1":"<article>",
+        "answer-2":"<section>",
+        "answer-3":"<blockquote>",
+        "answer-4":"<aside>",
+        "right-answer":"<blockquote>"
+    },
+    {
+        "title":"How We Specify Document Type Of HTML5 Page",
+        "answer-1":"<DOCTYPE html>",
+        "answer-2":"<DOCTYPE html5>",
+        "answer-3":"<!DOCTYPE html5>",
+        "answer-4":"<!DOCTYPE html>",
+        "right-answer":"<!DOCTYPE html>"
+    },
+    {
+        "title":"In HTML Can We Use This Way To Add Attributes",
+        "answer-1":"<div class='class-name'>",
+        "answer-2":"<div class=class-name>",
+        "answer-3":"<div class=\"class-name\">",
+        "answer-4":"All Is Right ",
+        "right-answer":"All Is Right"
+    },
+    {
+        "title":"Why We Use <b> Element",
+        "answer-1":"To Make Text Bold",
+        "answer-2":"To Make Text Italic",
+        "answer-3":"To Add Breakline",
+        "answer-4":"To Create Horizontal Line",
+        "right-answer":"To Make Text Bold"
+    }
+]

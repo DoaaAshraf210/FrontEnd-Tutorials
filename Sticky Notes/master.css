@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+h1 {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.container {
+    width: 850px;
+    margin: 30px;
+    position: relative;
+}
+
+.addition {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.addition .plus {
+    border: 2px dashed #ccc;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 100px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.box {
+    width: 200px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.bg-color {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+
+}
+
+li {
+    width: calc(100% / 6);
+    height: 100%;
+    cursor: pointer;
+}
+
+li.bg-white {
+    background-color: white;
+}
+
+li.bg-burlywood {
+    background-color: burlywood;
+}
+
+li.bg-cadetblue {
+    background-color: cadetblue;
+}
+
+li.bg-thistle {
+    background-color: thistle;
+}
+
+li.bg-cornflowerblue {
+    background-color: cornflowerblue;
+}
+
+li.bg-black {
+    background-color: black;
+
+
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+.delete,
+.save {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+.delete {
+    right: 0;
+}
+
+.save {
+    right: 50px;
+
+    background-color: green;
+}
+
+.numbers-color {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    left: calc(100% + 50px);
+    top: 0px;
+
+}
+
+@media (max-width:991px) {
+    .numbers-color {
+        left: 0px;
+        top: 100%;
+    }
+}
+
+.numbers-color div {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+
+}
+
+.numbers-color div span:first-child {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.numbers-color div span:first-child.bg-burlywood {
+    background-color: burlywood;
+}
+
+.numbers-color div span:first-child.bg-white {
+    background-color: white;
+}
+
+.numbers-color div span:first-child.bg-cadetblue {
+    background-color: cadetblue;
+}
+
+.numbers-color div span:first-child.bg-thistle {
+    background-color: thistle;
+}
+
+.numbers-color div span:first-child.bg-cornflowerblue {
+    background-color: cornflowerblue;
+}
+
+.numbers-color div span:first-child.bg-black {
+    background-color: black;
+}

@@ -1,0 +1,122 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color:hsl(217, 54%, 11%);
+}
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 400px;
+    margin: 50px auto ;
+    font-size: 18px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+    box-shadow: 10px 0px 0 40px hsl(216deg 50% 16% / 20%),
+               10px 10px 0px hsl(216, 50%, 16%), 
+                20px 20px 0px hsl(216, 50%, 16%);
+}
+.card .image {
+    position: relative; 
+    cursor: pointer;
+ 
+   
+}
+.card .image img {
+ width: 100%;    
+ border-radius: 10px;
+
+}
+
+.card .image .overlay {
+   background-color:hsl(178deg 100% 50% / 50%);
+   position: absolute;
+   left:0;
+   top:-2px;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   opacity: 0;
+   transition: 0.3s;
+} 
+
+.card .image .overlay svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.card .image:hover .overlay {  
+     opacity: 1;
+}
+
+.card .info h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card .info p {
+ font-size: 22px;  
+ color:hsl(215, 32%, 27%);
+ line-height: 1.5;
+}
+
+.card .info  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.card .info  div span:first-child {
+    color: hsl(178, 100%, 50%);
+    
+}
+
+.card .info  div span svg {
+    margin-right: 5px;
+}
+.card .info  div span:last-child {
+color:hsl(215, 32%, 27%);
+}
+.card .info  div span {
+    display: flex;
+    align-items: center;
+}
+.card .foot {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 15px;
+
+}
+
+.card .foot img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.card .foot div {
+    margin-left: 20px;
+    color: hsl(215, 32%, 27%);
+}
+
+.card .foot div span {
+ color: hsl(0, 0%, 100%);
+ cursor: pointer; 
+ transition: 0.3s;
+  
+}
+.card .foot div span:hover,
+.card .info h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    .card {
+        width: 300px;
+    }
+}
